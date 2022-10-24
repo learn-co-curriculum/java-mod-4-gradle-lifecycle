@@ -73,7 +73,7 @@ Edit the `main` method to print "Hello!" instead of "Hello World!", then:
 
 1. Press the build icon on the bottom toolbar to display the build view.
 2. Press the build icon on the top toolbar or
-   select **Build | Build Project** from the main menu to build the project.  
+   select Build | Build Project from the main menu to build the project.  
 
 ![gradle build](https://curriculum-content.s3.amazonaws.com/6002/gradle-lifecycle/gradlebuild2.png)
  
@@ -105,7 +105,7 @@ resources are available, etc.
 Let's run the `main` method to how the build process is triggered:
 
 1. Edit the `main` method and change the code to print "Goodbye".  
-2. Press the run button on the toolbar or select **Run | Run** from the main menu.
+2. Press the run button on the toolbar or select Run | Run from the main menu.
    Make sure the configuration next to the run button is set to
    run "Main" and not a Gradle lifecycle task.
 
