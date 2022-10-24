@@ -88,7 +88,7 @@ There are two different ways to do this:
    ![run build#2](https://curriculum-content.s3.amazonaws.com/6002/gradle-lifecycle/runbuild2.png)
 
 
-We can see all of the tasks executed as part of executing the **build** task.  Notice
+We can see the tasks executed as part of executing the **build** task.  Notice
 the tasks related to testing are skipped because we haven't defined any Junit
 test classes.
 
