@@ -75,8 +75,8 @@ Edit the `main` method to print "Hello!" instead of "Hello World!", then:
 2. Press the build icon on the top toolbar or
    select **Build | Build Project** from the main menu to build the project.  
 
-![build](https://curriculum-content.s3.amazonaws.com/6002/gradle-lifecycle/gradlebuild.png)
-
+![gradle build](https://curriculum-content.s3.amazonaws.com/6002/gradle-lifecycle/gradlebuild2.png)
+ 
 Building from the main menu executes the **classes**
 and **testClasses** tasks, along with other dependent tasks
 based on the DAG. Tasks that are up-to-date or have no inputs are skipped.
