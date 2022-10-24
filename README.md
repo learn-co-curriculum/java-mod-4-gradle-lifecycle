@@ -1,9 +1,11 @@
-# Lifecycles, phases, and goals
+# Gradle Lifecycle
 
 ## Learning Goals
 
-- Define the Gradle Lifecycle
-- Define the relationships between Lifecycle Phases, Tasks, and Plugins.
+- Define the relationships between Gradle lifecycle phases, tasks, and plugins.
+- Understand how a Directed Acycle Graph (DAG) of task dependencies is used during a build.
+- Use IntelliJ's Gradle Tool Window to execute a specific task.
+- Use Gradle to build and execute a Java program.
 
 ## Introduction
 
@@ -41,7 +43,7 @@ We call this Gradle’s **incremental build support**.
 
 Let's explore some of this using IntelliJ's Gradle Tool Window,
 which can be opened either by clicking on "Gradle" along
-the edge of the IntelliJ window, or by selecting ** View | Tool Windows | Gradle**
+the edge of the IntelliJ window, or by selecting View | Tool Windows | Gradle
 from the main menu.
   
 ![gradle tool window](https://curriculum-content.s3.amazonaws.com/6002/gradle-lifecycle/gradletoolwindow.png)
@@ -59,7 +61,7 @@ Expand the **Tasks** folders to see tasks available for execution.
   *compileTestJava*, *processTestResources*, *testClasses*, *jar*, *javadoc*,
   *test*, and *cleanTaskName*.
 
-We can get a description of each task by typing "gradle tasks --all"
+We can get a description of each task by typing `gradle tasks --all`
 in the terminal window.
 
 ## Build a project
@@ -67,7 +69,7 @@ in the terminal window.
 Let's see how IntelliJ builds the project when we change the code
 and need to recompile. 
 
-Edit the `main` method to print "Hello" instead of "Hello World!", then:
+Edit the `main` method to print "Hello!" instead of "Hello World!", then:
 
 1. Press the build icon on the bottom toolbar to display the build view.
 2. Press the build icon on the top toolbar or
@@ -82,10 +84,10 @@ based on the DAG. Tasks that are up-to-date or have no inputs are skipped.
 What if we want to execute the **build** task itself?
 There are two different ways to do this:
 
-1. Right-click on the task in the Gradle Tool Window and select "Run":
-   ![run build](https://curriculum-content.s3.amazonaws.com/6002/gradle-lifecycle/runbuild.png)
-2. Click on the "Execute Gradle Task" icon and type "gradle build":
-   ![run build#2](https://curriculum-content.s3.amazonaws.com/6002/gradle-lifecycle/runbuild2.png)
+| Technique #1                                                                                  | Technique #2                                                                                     |
+|-----------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
+| Right-click on the task and select "Run"                                                      | Click on the "Execute Gradle Task" icon and type "gradle build"                                  |
+| ![run build](https://curriculum-content.s3.amazonaws.com/6002/gradle-lifecycle/runbuild.png)  | ![run build#2](https://curriculum-content.s3.amazonaws.com/6002/gradle-lifecycle/runbuild2.png)  |
 
 
 We can see the tasks executed as part of executing the **build** task.  Notice
